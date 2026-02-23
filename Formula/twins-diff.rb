@@ -5,21 +5,21 @@
 class TwinsDiff < Formula
   desc "Web-based tool for comparing two directory trees"
   homepage "https://github.com/the-red/twins-diff"
-  version "0.9.1"
+  version "0.9.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/the-red/twins-diff/releases/download/v0.9.1/twins-diff_0.9.1_darwin_amd64.tar.gz"
-      sha256 "49fe6acb5c01be24c2f620459e4917c33d9fbd028784f4be10cefc004e260eb8"
+      url "https://github.com/the-red/twins-diff/releases/download/v0.9.2/twins-diff_0.9.2_darwin_amd64.tar.gz"
+      sha256 "23f8115b94d41d85adf32ce1a90a91ff02b0c645019e93915a6955857e3350b8"
 
       define_method(:install) do
         bin.install "twins-diff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/the-red/twins-diff/releases/download/v0.9.1/twins-diff_0.9.1_darwin_arm64.tar.gz"
-      sha256 "e0feb35698c251f2b43c57060f5972f6abd2a7849a4e1a5a8fe92fad6f2d5d41"
+      url "https://github.com/the-red/twins-diff/releases/download/v0.9.2/twins-diff_0.9.2_darwin_arm64.tar.gz"
+      sha256 "0966d478bc9169ec1071a4096dedc2a73af66418eabe722960c80ea0880cbec6"
 
       define_method(:install) do
         bin.install "twins-diff"
@@ -29,15 +29,15 @@ class TwinsDiff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/the-red/twins-diff/releases/download/v0.9.1/twins-diff_0.9.1_linux_amd64.tar.gz"
-      sha256 "f6c77a6b0d52c41e25d9a8e9d08518397b0502f3f228ddf190d809f3f4f5cd30"
+      url "https://github.com/the-red/twins-diff/releases/download/v0.9.2/twins-diff_0.9.2_linux_amd64.tar.gz"
+      sha256 "deb32efd1d5eb962007b51c77af9efabe2893e1566941a8eed018ea0a8a802cf"
       define_method(:install) do
         bin.install "twins-diff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/the-red/twins-diff/releases/download/v0.9.1/twins-diff_0.9.1_linux_arm64.tar.gz"
-      sha256 "a15c3937f0b08089fd106ad63ad497f25e2aec1b33c37678a2aff16fc142851a"
+      url "https://github.com/the-red/twins-diff/releases/download/v0.9.2/twins-diff_0.9.2_linux_arm64.tar.gz"
+      sha256 "d03248d62a106ece1f7bb6d8e41551c2806952080e7aab87eb03683d900f68a5"
       define_method(:install) do
         bin.install "twins-diff"
       end
